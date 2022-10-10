@@ -21,7 +21,7 @@ kubectl get pvc
 kubectl get secret
 ```
 
-
+```
 NAME                                   READY   STATUS    RESTARTS   AGE
 pod/wordpress-7f7bf85b9c-qm6gf         1/1     Running   0          14m
 pod/wordpress-mysql-7d5f9bb46c-d59nb   1/1     Running   0          14m
@@ -38,7 +38,11 @@ deployment.apps/wordpress-mysql   1/1     1            1           14m
 NAME                                         DESIRED   CURRENT   READY   AGE
 replicaset.apps/wordpress-7f7bf85b9c         1         1         1       14m
 replicaset.apps/wordpress-mysql-7d5f9bb46c   1         1         1       14m
+```
+To get service IP
+`$ minikube service wordpress --url`
+http://192.168.59.100:32191
 
-
+Copy the url into browser and run it 
 
 1. To delete the cluster run `kubectl delete -f ./`
