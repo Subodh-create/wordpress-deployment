@@ -3,13 +3,13 @@
 #### Usage
 1. git clone the repository
 
-`git clone https://github.com/rthway/wordpress-k8s.git`
+https://github.com/Subodh-create/wordpress-deployment.git`
 
 1. Run the below command to startup a cluster with wordpress and mysql
 
 `kubectl apply -f ./`
 
-1. Change password in the kustomization.yaml file
+1. Change password in the secret.yaml file
 
 1. check using the below commands
 `kubectl get all`
